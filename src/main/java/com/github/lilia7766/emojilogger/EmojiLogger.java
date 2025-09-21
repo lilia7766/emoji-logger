@@ -5,8 +5,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public class EmojiLogger implements Logger {
 
     private static final ConcurrentHashMap<String, EmojiLogger> INSTANCES = new ConcurrentHashMap<>();
-    
-    private static final String INFO_EMOJI = "🟢";
+
+    private static final String INFO_EMOJI = "✅";
+    private static final String INFO_COLOR = "\u001B[32m";
     private static final String WARN_EMOJI = "⚠️";
     private static final String ERROR_EMOJI = "🔴";
     private static final String DEBUG_EMOJI = "🔍";
@@ -23,7 +24,7 @@ public class EmojiLogger implements Logger {
 
     @Override
     public void info(String msg) {
-        System.out.printf("%s INFO  [%s] %s%n", INFO_EMOJI, className, msg);
+        System.out.printf("%s%s INFO  [%s] %s%n\u001B[0m", INFO_COLOR, INFO_EMOJI, className, msg);
     }
 
     @Override

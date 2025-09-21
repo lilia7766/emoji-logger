@@ -29,8 +29,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/lilia7766/emoji-logger.git</connection>
-        <developerConnection>scm:git:ssh://github.com/lilia7766/emoji-logger.git</developerConnection>
+        <connection>scm:git:https://github.com/lilia7766/emoji-logger.git</connection>
+        <developerConnection>scm:git:https://github.com/lilia7766/emoji-logger.git</developerConnection>
         <url>https://github.com/lilia7766/emoji-logger</url>
     </scm>
 
